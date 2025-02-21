@@ -1,4 +1,4 @@
-import "./App.css";
+import css from "../src/App.module.css";
 import userData from "./userData.json";
 import list from "../src/friends.json";
 import transactions from "../src/transactions.json";
@@ -8,7 +8,7 @@ import TransactionHistory from "./components/TransactionHistory/TransactionHisto
 
 function App() {
   return (
-    <>
+    <div className={css.wrapper}>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -18,7 +18,7 @@ function App() {
       />
       <FriendList friends={list} />
       <TransactionHistory items={transactions} />
-    </>
+    </div>
   );
 }
 

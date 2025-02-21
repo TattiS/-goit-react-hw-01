@@ -8,9 +8,11 @@
 
 .friendCard {
   width: 120px;
+  padding: 10px;
   text-align: center;
-  border: 2px solid #000;
+  border: 2px solid #00c3ff;
   border-radius: 10px;
-  padding: 15px;
+  background-color: #ffffff;
+  color: black;
   font-family: Arial, sans-serif;
 }
